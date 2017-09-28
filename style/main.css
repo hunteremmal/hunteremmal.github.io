@@ -1,0 +1,41 @@
+* {
+    background-color: lightgray;
+    font-family: sans-serif;
+    padding:5;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: firebrick;
+}
+
+p, ul, li, ol {
+    color: dimgray;
+}
+
+a {
+    color: darkslategray;
+}
+
+img {
+    padding: 10px;
+}
+
+.style1 {
+    margin: 0 auto;
+    border: 1px solid black;
+    padding: 5px;
+    background-color: hotpink;
+    line-height: 1.5em;
+    color: dimgray;
+}
+
+.right{
+    float:right;
+    padding:1em;
+
+    
+}
+
+.smaller{
+    font-size: .5em;
+}
