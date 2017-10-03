@@ -7,9 +7,9 @@ body {
     font-family: 'Sansito', Ubuntu, sans-serif;
 }
 
-h1, h2, h3 {
+h1,h2,h3 {
     color: #7c8855;
-    font-size: 16px;
+    font-size: 32px;
 }
 
 h1 {
@@ -19,9 +19,8 @@ h1 {
 header {
     background-color: #a3bb49;
     padding: .5rem;
-    text-align:center;
+    text-align: center;
     color: #fff;
-
 }
 
 main {
@@ -41,9 +40,11 @@ footer {
     color: #fff;
     font-size: .8rem;
 }
-    /* Class Selectors *******************/
+
+
+/* Class Selectors *******************/
+
 .profile {
-        border: 7px solid #777;
-        margin:1em;
-        
-    }
+    border: 7px solid #777;
+    margin: 1em;
+}
