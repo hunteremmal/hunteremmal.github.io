@@ -63,7 +63,9 @@ nav button {
     float: right;
 }
 
-nav ul {}
+nav ul {
+    display:none;
+}
 
 nav ul li {}
 
@@ -109,7 +111,7 @@ section {
 
 article p.town-article img {
     /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
-    width: 90%;
+    width: 80%;
     /* fill the page in the small/phone view */
     margin: 1em;
 }
