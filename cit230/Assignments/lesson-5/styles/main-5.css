@@ -29,26 +29,31 @@ header {
     padding-left: 10%;
     padding-top: 2em;
     padding-bottom: 2em;
+    align-content: center;
 }
 
 header h1 {
     font-family: "Righteous";
     font-size: 3em;
     line-height: .025em;
-    text-align: center;
+    padding-left: 15%;
 }
 
 header img {
+    width: 15%;
     max-width: 100px;
     float: left;
+    padding: .1em;
 }
 
 header .subheading {
     font-size: 1em;
+    line-height: 0.5em;
+    padding-left: 15%;
 }
 
-a{
-    color:#B0B0B0;
+a {
+    color: #B0B0B0;
     text-decoration: underline;
 }
 
@@ -58,44 +63,48 @@ nav button {
     float: right;
 }
 
-nav ul {
-    
-}
+nav ul {}
 
 nav ul li {}
 
 nav ul li a {}
 
-nav ul li.active a {}
+nav ul li.active a {
+    color: #B0B0B0;
+    text-decoration: underline;
+}
 
 nav ul li a:hover {}
 
 main {}
 
-main h2, h3, h4, h5, h6 {
+main h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: "Righteous";
-    color:#314047;
+    color: #314047;
     text-align: center;
 }
 
 main figure {
-    margin:.2rem auto;
-    width: 90%;
+    margin: .2rem auto;
+    width: 80%;
 }
 
 main figure img {
-    width: 90%;
-        margin:.2rem auto;
+    width: 80%;
+    margin: .2rem auto;
 }
 
 main picture img {
-    width:90%;
-    margin:2em auto auto auto;
-    
+    width: 80%;
+    margin: 2em auto auto auto;
 }
 
 section {
-     padding:2em;
+    padding: 2em;
 }
 
 article p.town-article img {
@@ -105,8 +114,8 @@ article p.town-article img {
     margin: 1em;
 }
 
-article{
-     padding:2em;
+article {
+    padding: 2em;
 }
 
 footer {
@@ -115,15 +124,14 @@ footer {
 }
 
 footer aside {
-    padding:2em;
-    text-align:center;
-    
+    padding: 2em;
+    text-align: center;
 }
 
 footer>p {
-    font-size:.8em;
+    font-size: .8em;
     text-align: center;
-    padding-bottom:2em;
+    padding-bottom: 2em;
 }
 
 

@@ -4,11 +4,12 @@
         display: none;
     }
     nav ul {
+        display:block;
         list-style-type: none;
         margin: 0;
         padding: 0;
         overflow: hidden;
-        background-color: #333;
+        background-color: #314047;
     }
     nav ul li {
         float: left;
@@ -21,11 +22,11 @@
         text-decoration: none;
     }
     nav ul li.active a {
-        background-color: #555;
+        background-color: #B0B0B0;
         color: white;
     }
     nav ul li a:hover {
-    background-color: #111;
+    background-color: #B0B0B0;
     }
     /* hamburger button does not need to be shown */
     section.forecast {
