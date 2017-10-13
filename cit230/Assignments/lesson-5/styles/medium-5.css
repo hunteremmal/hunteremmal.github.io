@@ -4,7 +4,7 @@
         display: none;
     }
     nav ul {
-        display:block;
+        display: block;
         list-style-type: none;
         margin: 0;
         padding: 0;
@@ -26,16 +26,27 @@
         color: white;
     }
     nav ul li a:hover {
-    background-color: #B0B0B0;
+        background-color: #B0B0B0;
     }
     /* hamburger button does not need to be shown */
     section.forecast {
-        display: ???;
+        display: block;
     }
     /* show the 10-day forecast with the medium view and up */
     article p.town-article img {
         width: 62.666%;
         float: right;
+    }
+       header h1 {
+        font-family: "Righteous";
+        font-size: 4em;
+        line-height: .025em;
+        padding-left: 15%;
+    }
+    header .subheading {
+        font-size: 2em;
+        line-height: 1em;
+        padding-left: 15%;
     }
     /* responsive images */
 }

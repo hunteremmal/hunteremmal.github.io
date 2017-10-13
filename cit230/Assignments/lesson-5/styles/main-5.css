@@ -2,6 +2,7 @@
 
 * {
     box-sizing: border-box;
+    align-content: center;
 }
 
 
@@ -42,13 +43,15 @@ header h1 {
 header img {
     width: 15%;
     max-width: 100px;
+    min-width: 75px;
     float: left;
     padding: .1em;
+    padding-right: .5em;
 }
 
 header .subheading {
     font-size: 1em;
-    line-height: 0.5em;
+    line-height: 1em;
     padding-left: 15%;
 }
 
@@ -64,7 +67,7 @@ nav button {
 }
 
 nav ul {
-    display:none;
+    display: none;
 }
 
 nav ul li {}
@@ -90,6 +93,7 @@ h6 {
     text-align: center;
 }
 
+
 main figure {
     margin: .2rem auto;
     width: 80%;
@@ -101,8 +105,9 @@ main figure img {
 }
 
 main picture img {
-    width: 80%;
-    margin: 2em auto auto auto;
+    width: 10%;
+    min-width: 75px;
+    padding: .5em;
 }
 
 section {
@@ -118,6 +123,10 @@ article p.town-article img {
 
 article {
     padding: 2em;
+}
+
+section.forecast {
+    display: none;
 }
 
 footer {
