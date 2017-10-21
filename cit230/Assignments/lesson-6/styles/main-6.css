@@ -1,0 +1,229 @@
+/* This main css file contains the default rules and is geared toward the small/phone view */
+
+* {
+    box-sizing: border-box;
+    align-content: center;
+}
+
+
+/* This wildcard applies to all elements ensuring a box layout model */
+
+body {
+    font-size: 16px;
+    font-family: "Quicksand";
+    background-color: #ffffff;
+    margin: 1em auto;
+    /* Declare the base font-family - from google font api or other */
+}
+
+header,
+nav,
+main,
+footer {
+    /* the comma means apply the following CSS declarations to all of the listed elements */
+    /* Declare the maximum width and other main element rules to limit the stretch on wide views */
+}
+
+header {
+    background-color: #314047;
+    color: #ffffff;
+    padding-left: 10%;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+header h1 {
+    font-family: "Righteous";
+    font-size: 3em;
+    line-height: 1em;
+    padding-left: 15%;
+    text-align: left;
+}
+
+header img {
+    width: 15%;
+    max-width: 100px;
+    min-width: 75px;
+    float: left;
+    padding: .1em;
+    padding-right: .5em;
+}
+
+header .subheading {
+    font-size: 1em;
+    line-height: 1em;
+    padding-left: 15%;
+}
+
+a {
+    color: #B0B0B0;
+    text-decoration: underline;
+}
+
+nav {}
+
+
+/*nav button {
+    float: right;
+}
+
+nav ul {
+    display: none;
+}
+*/
+
+nav ul li {}
+
+nav ul li a {}
+
+nav ul li.active a {
+    color: #B0B0B0;
+    text-decoration: underline;
+}
+
+nav ul li a:hover {}
+
+main {}
+
+main h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Righteous";
+    color: #314047;
+    text-align: center;
+}
+
+main figure {
+    margin: .2rem auto;
+    width: 80%;
+}
+
+main figure img {
+    margin: .2rem auto;
+}
+
+main picture img {
+    width: 10%;
+    min-width: 75px;
+    padding: .5em;
+}
+
+section {
+    padding: 2em;
+}
+
+article p.town-article img {
+    /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
+    width: 80%;
+    /* fill the page in the small/phone view */
+    margin: 1em;
+}
+
+article {
+    padding: 2em;
+}
+
+section.forecast {
+    display: none;
+}
+
+footer {
+    background-color: #314047;
+    color: #ffffff;
+}
+
+footer aside {
+    padding: 2em;
+    text-align: center;
+}
+
+footer>p {
+    font-size: .8em;
+    text-align: center;
+    padding-bottom: 2em;
+}
+
+.hamburger {
+    display: block;
+    position: absolute;
+    top: 2.0rem;
+    right: 1.25rem;
+}
+
+.navigation {
+    list-style: none;
+    padding-left: 0;
+}
+
+.navigation li {
+    display: none;
+}
+
+
+/* When the responsive class is added to the unordered list on hamburger button click 
+placed in a media query in order to accomodate the toggle when in wider view*/
+
+@media only screen and (max-width: 37.5em) {
+    .navigation.responsive {
+        position: relative;
+    }
+    .navigation.responsive li {
+        display: block;
+        width: 100%;
+        margin: 2px 0;
+    }
+    .navigation.responsive li a {
+        padding: 1rem;
+        text-align: center;
+        display: block;
+        text-decoration: none;
+    }
+    .navigation.responsive li a:hover {
+        background-color: #ddd;
+    }
+}
+
+
+/* The following can be used in lieu of a button with a HTML entity which may not be dispalyed correctly in all browsers - or a SVG option is good - button size issue
+.hamburger { 
+    content: "";
+    position: absolute;
+    right: 1.5rem; top: 1.8rem;
+    display: block;
+    width: 1.25rem; height: 0;
+    -webkit-box-shadow: 1px 10px 1px 1px #eee,1px 16px 1px 1px #eee,1px 22px 1px 1px #eee;
+    box-shadow: 0 10px 0 1px #eee,0 16px 0 1px #eee,0 22px 0 1px #eee;
+}*/
+
+@media only screen and (min-width: 37.5em) {
+    nav {
+        margin: 0 auto;
+        max-width: 600px;
+    }
+
+    .hamburger {
+        display: none;
+    }
+    .navigation {
+        background-color: #314047;
+        overflow: hidden;
+        text-align: center;
+    }
+    .navigation li {
+        display: inline-block;
+        margin-left: .25rem;
+    }
+    .navigation a {
+        display: block;
+        color: #fff;
+        padding: .5rem;
+        text-align: center;
+        text-decoration: none;
+    }
+    .navigation a:hover {
+        color: #314047;
+        background-color: #777;
+    }
+}

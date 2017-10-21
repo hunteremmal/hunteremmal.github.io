@@ -37,7 +37,7 @@ header h1 {
     font-size: 3em;
     line-height: 1em;
     padding-left: 15%;
-    text-align:left;
+    text-align: left;
 }
 
 header img {
@@ -92,7 +92,6 @@ h6 {
     color: #314047;
     text-align: center;
 }
-
 
 main figure {
     margin: .2rem auto;
