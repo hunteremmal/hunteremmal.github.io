@@ -116,7 +116,7 @@ section {
 
 article p.town-article img {
     /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
-    width: 80%;
+    width: 50%;
     /* fill the page in the small/phone view */
     margin: 1em;
 }
