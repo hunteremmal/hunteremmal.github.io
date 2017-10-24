@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Rain Check Weather Website</title>
+    <meta name="author" content="Your Name Here">
+    <meta name="description" content="page description placeholder">
+    <!-- external style references in the proper cascading order -->
+    <link href="https://fonts.googleapis.com/css?family=#" rel="stylesheet">
+    <!-- Google API font reference -->
+    <link href="styles/normalize.css" rel="stylesheet">
+    <!-- normalize useragent/browser defaults -->
+    <link href="styles/main-7.css" rel="stylesheet">
+    <!-- default styles - small/phone views -->
+    <link href="styles/medium-7.css" rel="stylesheet">
+    <!-- medium/tablet views -->
+    <link href="styles/large-7.css" rel="stylesheet">
+    <!-- large/wide/desktop views -->
+    <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Righteous' rel='stylesheet'>
+</head>
+
+<body>
+
+    <header>
+        <img src="/cit230/Assignments/lesson-5/images/Artboard%201-100.jpg" alt="The site logo" class="logo">
+        <div class="title">
+            <h1>Rain Check</h1>
+            <div class="subheading">Your weather for today and tomorrow</div>
+        </div>
+        <button class="hamburger" onclick="toggleHam()">&#9776;</button>
+    </header>
+
+    <!-- site navigation use placeholder references -->
+    <nav>
+        <ul class="navigation">
+            <li><a href="#home" title="Home">Home</a></li>
+            <li><a href="#franklin" title="Franklin">Franklin</a></li>
+            <li><a href="#greenville" title="Greenville">Greenville</a></li>
+            <li><a href="#springville" title="Springfield">Springfield</a></li>
+            <li><a href="#stormcenter" title="Storm Center">Storm Center</a></li>
+            <li><a href="#gallery" title="Gallery">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Franklin</h2>
+        <figure class="firstimage">
+            <img src="images/franklin-original.jpeg" alt="Picture of the city of Franklin" sizes="50vw" srcset="images/franklin-small.jpg 250w, images/franklin-med.jpg 500w, images/franklin-large.jpg 800w">
+        </figure>
+        <h3 class="weathersummarytitle">Weather Summary</h3>
+        <section class="weathersummary">
+            <div class="highlow">
+                <p>High: 60&deg;F</p>
+                <p>Low: 40&deg;F</p>
+            </div>
+            <div class="current">
+                Rainy
+                <picture>
+                    <img class="rainimage" src="/cit230/Assignments/lesson-5/images/rainicon.png" alt="It's going to rain">
+                </picture>
+            </div>
+            <div class="conditions">
+                <p>Precipitation: Rain</p>
+                <p>Wind Speed: 7mph</p>
+            </div>
+        </section>
+
+        <section class="forecast">
+            <h3>10 Day Forecast</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Day 1</th>
+                        <th>Day 2</th>
+                        <th>Day 3</th>
+                        <th>Day 4</th>
+                        <th>Day 5</th>
+                        <th>Day 6</th>
+                        <th>Day 7</th>
+                        <th>Day 8</th>
+                        <th>Day 9</th>
+                        <th>Day 10</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>89&deg;F</td>
+                        <td>87&deg;F</td>
+                        <td>78&deg;F</td>
+                        <td>75&deg;F</td>
+                        <td>72&deg;F</td>
+                        <td>72&deg;F</td>
+                        <td>79&deg;F</td>
+                        <td>83&deg;F</td>
+                        <td>85&deg;F</td>
+                        <td>89&deg;F</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <article>
+            <h3 class="articletitle">Franklin Breaks Record</h3>
+            <img class="articleimage" src="images/franklinlightning.jpeg" alt="Lightning strikes in Franklin">
+            <p class="town-article">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dolor dui, congue congue enim non, accumsan venenatis nulla. Sed molestie orci vel sem pharetra fringilla vitae in ex. Morbi sit amet consequat ipsum. Mauris et ultrices magna. Fusce laoreet ultrices lectus vitae molestie. Nam dapibus magna nisl, ut egestas orci mattis et. Curabitur ut turpis id nulla iaculis interdum. Ut dapibus quam enim, vel maximus mauris cursus eget. Nullam cursus, quam ac posuere commodo, ipsum eros porta massa, nec suscipit tortor augue eget est. Vestibulum eget ipsum lectus. Vestibulum eget ipsum sollicitudin, sagittis nisi a, vulputate risus. In ultrices, dui et ultrices euismod, dui ipsum elementum eros, sit amet eleifend libero augue vitae ex. Ut augue nunc, malesuada ut iaculis ac, efficitur ac dui. Vivamus ut sapien lobortis, aliquet ligula ut, cursus velit. Nullam luctus elit eget ipsum auctor, eget lobortis libero mollis. Mauris magna lectus, malesuada hendrerit egestas id, fringilla sit amet est. Morbi scelerisque risus ac ante bibendum, at accumsan lectus finibus. Morbi pharetra lacus non fermentum venenatis. Quisque congue, orci rutrum sollicitudin molestie, erat metus egestas augue, sed vehicula tellus ipsum id sapien. Curabitur neque augue, scelerisque eu pulvinar quis, aliquet sed velit.
+            </p>
+        </article>
+
+    </main>
+
+    <footer>
+        <aside class="contactinfo"><strong>Rain Check</strong><br> 123 Main Street Franklin, <br> MU 83454<br>
+            <a href="tel:2096016261">(999)999-9999</a><br>
+            <a href="mailto:hunteremmal@gmail.com">contact@raincheck.com</a></aside>
+        <p class="footer-bar">&copy;2017 All Rights Reserved | Rain Check | <span id="currentdate"></span></p>
+    </footer>
+
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/currentdate.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,207 @@
+body {
+    font-size: 16px;
+    font-family: "Quicksand";
+    background-color: #ffffff;
+    margin: auto;
+    padding: 5%;
+}
+
+header {
+    display: flex;
+    background-color: #314047;
+    justify-content: center;
+    padding: 2%;
+}
+
+.logo {
+    display: flex;
+    width: 10%;
+    height: 10%;
+    margin: 5%;
+}
+
+header h1 {
+    font-family: "Righteous";
+    font-size: 3rem;
+}
+
+header .subheading {
+    font-size: 1.5rem;
+}
+
+.title {
+    display: flex;
+    color: #ffffff;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: auto;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+    display: flex;
+    justify-content: center;
+    font-family: "Righteous";
+    color: #314047;
+}
+
+.firstimage {
+    display: flex;
+    justify-content: center;
+}
+
+.weathersummary {
+    background-color: #B0B0B0;
+    margin: 4% auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.weathersummarytitle {
+    justify-content: center;
+}
+
+
+/*.highlow {
+    display: flex;
+}
+*/
+
+.current {
+    display: flex;
+}
+
+.rainimage {
+    display: flex;
+    width: 40%;
+}
+
+.conditions {
+    display: flex;
+}
+
+.forecast {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+}
+
+.articleimage {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+}
+
+.town-article {
+    display: flex;
+}
+
+footer {
+    background-color: #314047;
+    color: #ffffff;
+    padding: 2%;
+}
+
+footer>p {
+    font-size: .8em;
+}
+
+.contactinfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footerbar {
+    display: inline;
+}
+
+a {
+    color: #B0B0B0;
+    text-decoration: underline;
+}
+
+nav ul li.active a {
+    color: #B0B0B0;
+    text-decoration: underline;
+}
+
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    top: 2.0rem;
+    right: 1.25rem;
+}
+
+.navigation {
+    list-style: none;
+    padding-left: 0;
+}
+
+.navigation li {
+    display: none;
+}
+
+@media only screen and (max-width: 37.5em) {
+    .navigation.responsive {
+        position: relative;
+    }
+    .navigation.responsive li {
+        display: inline;
+        flex-direction: row;
+        justify-content: flex-start;
+        width: 100%;
+        margin: 2px 0;
+    }
+    .navigation.responsive li a {
+        padding: 1rem;
+        display: inline;
+        text-decoration: none;
+    }
+    .navigation.responsive li a:hover {
+        background-color: #314047;
+    }
+}
+
+@media only screen and (min-width: 37.5em) {
+    nav {
+        margin: 0 auto;
+        max-width: 600px;
+    }
+
+    .hamburger {
+        display: none;
+    }
+    .navigation {
+        background-color: #314047;
+        overflow: hidden;
+        text-align: center;
+    }
+    .navigation li {
+        display: inline;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+    .navigation a {
+        display: flex;
+        color: #fff;
+        padding: .5rem;
+        text-align: center;
+        text-decoration: none;
+    }
+    .navigation a:hover {
+        color: #314047;
+        background-color: #777;
+    }
+}
+
