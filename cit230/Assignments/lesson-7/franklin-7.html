@@ -51,29 +51,29 @@
             <img src="images/franklin-original.jpeg" alt="Picture of the city of Franklin" sizes="50vw" srcset="images/franklin-small.jpg 250w, images/franklin-med.jpg 500w, images/franklin-large.jpg 800w">
         </figure>
         <div class="weathersummarycolor">
-        <h3 class="weathersummarytitle">Weather Summary</h3>
-        <section class="weathersummary">
-            <div class="highlow">
-                <p>High: 60&deg;F</p>
-                <p>Low: 40&deg;F</p>
-            </div>
-            <div class="current">
-                <p>Rainy</p>
-                <picture>
-                    <img class="rainimage" src="/cit230/Assignments/lesson-7/images/rainicon.png" alt="It's going to rain">
-                </picture>
-            </div>
+            <h3 class="weathersummarytitle">Weather Summary</h3>
+            <section class="weathersummary">
+                <div class="highlow">
+                    <p>High: 60&deg;F</p>
+                    <p>Low: 40&deg;F</p>
+                </div>
+                <div class="current">
+                    <p>Rainy</p>
+                    <picture>
+                        <img class="rainimage" src="/cit230/Assignments/lesson-7/images/rainicon.png" alt="It's going to rain">
+                    </picture>
+                </div>
 
-            <div class="conditions">
-                <p>Precipitation: </p>
-                <p>Rain</p>
-            </div>
+                <div class="conditions">
+                    <p>Precipitation: </p>
+                    <p>Rain</p>
+                </div>
 
-            <div class="windspeed">
-                <p>Wind Speed:</p>
-                <p id="demo"></p>
-            </div>
-        </section>
+                <div class="windspeed">
+                    <p>Wind Speed:</p>
+                    <p id="demo"></p>
+                </div>
+            </section>
         </div>
 
         <section class="forecast">
@@ -129,6 +129,8 @@
         <p class="footer-bar">&copy;2017 All Rights Reserved | Rain Check | <span id="currentdate"></span></p>
     </footer>
 
+    <script src="scripts/w3.js"></script>
+    <script src="scripts/modularize.js"></script>
     <script src="scripts/hamburger.js"></script>
     <script src="scripts/currentdate.js"></script>
     <script src="scripts/windchill.js"></script>
