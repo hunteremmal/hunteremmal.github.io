@@ -1,9 +1,8 @@
 <!doctype html>
 <html lang="en-us">
 
-<head w3-include-html="modules/head.html">
+<head rel="import" w3-include-html="modules/head.html">
     <title>Franklin</title>
-    <link rel="import" href="modules/head.html">
 </head>
 
 <body>
@@ -13,8 +12,8 @@
     </header>
 
     <!-- site navigation use placeholder references -->
-    <nav>
-        <link rel="import" href="modules/nav.html">
+    <nav rel="import" w3-include-html="modules/nav.html">
+
     </nav>
 
     <main>
@@ -94,14 +93,14 @@
 
     </main>
 
-    <footer>
-        <link rel="import" href="modules/footer.html">
+    <footer rel="import" w3-include-html="modules/footer.html">
+
     </footer>
 
     <script src="scripts/w3.js"></script>
     <script src="scripts/modularize.js"></script>
     <script src="scripts/hamburger.js"></script>
-    <script src="scripts/currentdate.js"></script>
+    <!--<script src="scripts/currentdate.js"></script>-->
     <script src="scripts/windchill.js"></script>
 
 
