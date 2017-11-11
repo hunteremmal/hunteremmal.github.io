@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head w3-include-html="modules/head.html">
+    <title>Storm Center</title>
+</head>
+
+<body>
+    <header w3-include-html="modules/header.html">
+    </header>
+
+    <nav w3-include-html="modules/nav.html">
+    </nav>
+
+    <fieldset>
+        <legend>Personal Information</legend>
+        <label><span>Full Name:</span><input name="fullname" type="text" value="" placeholder="Full Name" pattern="[a-zA-Z]{5}"></label>
+        <label><span>Email:</span><input name="email" type="email" value="" placeholder="zen@gmail.com"></label>
+        <label><span>Phone Number:</span><input name="phone" type="tel" value="" required></label>
+        <label><span>Zip Code:</span><input name="zipcode" type="number" required></label>
+        <label><span>Storm Date:</span><input name="stormDate" type="date"></label>
+        
+        <label>
+        <span>Storm Type</span>
+        <input type="text" name="stormType" list="types">
+        <datalist id="types">
+            <option value="Flash Flood"></option>
+            <option value="Hail"></option>
+            <option value="Hurricane"></option>
+            <option value="Thunderstorm"></option>
+            <option value="Tornado"></option>
+        </datalist>
+        </label>
+        
+        <label><span>Storm Severity</span><input name="severity" type="range" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)"></label>
+        
+        <script type="application/javascript">
+            function adjustRating(rating) {
+                document.getElementById("ratingvalue").innerHTML = rating;}
+        </script>
+        <span id="ratingvalue"></span>
+        <label>
+        <span>Storm Region</span>
+        <input type="text" name="stormType" list="types" placeholder="Select Region">
+        <datalist id="types">
+            <option value="Franklin"></option>
+            <option value="Greenville"></option>
+            <option value="Springfiled"></option>
+        </datalist>
+        </label>
+        
+        <label><span>User in Danger:</span>
+        <input name="danger" type="radio" value="Yes"><span>Yes</span>
+        <input name="danger" type="radio" value="No"><span>No</span>
+        <input name="danger" type="radio" value="Maybe"><span>Maybe</span>
+        </label>
+        <label><span>Additional Information or Comments</span><textarea name="comments" rows="10" cols="50" placeholder="Write comments here."></textarea></label>
+    </fieldset>
+    
+    <input type="submit" value="Submit" class="submitBtn">
+
+    <footer w3-include-html="modules/footer.html">
+    </footer>
+
+    <script src="scripts/w3.js"></script>
+    <script src="scripts/modularize.js"></script>
+    <script src="scripts/hamburger.js"></script>
+    <!--<script src="scripts/currentdate.js"></script>-->
+    <script src="scripts/windchill.js"></script>
+
+</body>
+
+</html>
