@@ -1,5 +1,3 @@
-w3.includeHTML();
-
 //day of week
 var d = new Date();
 var weekday = new Array(7);
@@ -37,4 +35,4 @@ var whichmonth = month[b.getMonth()];
 var e = new Date();
 var year = e.getFullYear();
 
-document.getElementById("currentdate").innerHTML = n + " " + dayofmonth + " " + whichmonth + " " + year;
+document.getElementById("currentdate").innerHTML = n + " " +dayofmonth + " " + whichmonth + " " + year;

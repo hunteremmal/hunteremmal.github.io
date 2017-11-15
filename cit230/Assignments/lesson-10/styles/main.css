@@ -22,11 +22,11 @@ header {
 
 header h1 {
     font-family: "Righteous";
-    font-size: 3rem;
+    font-size: 2rem;
 }
 
 header .subheading {
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 
 .title {
@@ -92,21 +92,40 @@ h6 {
 
 .forecast {
     display: none;
-    flex-direction: column;
-    justify-content: center;
 }
+
+table{
+    margin: 3% auto;
+    border: solid black 1px;
+    background: #314047;
+}
+
+td{
+    background: blue;
+    padding:2%;
+    background: white;
+}
+
+th{
+    color:white;
+}
+
+th h3{
+    color: white;
+}
+
 
 article {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin: 0 20%;
 }
 
 .articleimage {
-    display: flex;
-    width: 50%;
-    align-content: center;
-    justify-content: center;
+    display: block;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 .town-article {
@@ -114,10 +133,11 @@ article {
 }
 
 footer {
-    display: block;
+    display:block;
     background-color: #314047;
     color: #ffffff;
     padding: 2%;
+    margin: 0 auto;
 }
 
 footer>p {
@@ -125,13 +145,13 @@ footer>p {
 }
 
 .contactinfo {
-    display: flex;
-    flex-direction: column;
+    display: block;
     justify-content: center;
 }
 
 .footerbar {
-    display: inline;
+    display: block;
+    justify-content: center;
 }
 
 a {
@@ -232,4 +252,55 @@ nav ul li.active a {
 
 .galleryimages {
     max-height: 200px;
+}
+
+/*form stuff*/
+
+fieldset{
+    background-color:#B0B0B0;
+    border-radius: .8em;
+    margin: 1.5em auto;
+    border: black solid 1px;
+    max-width: 70%;
+    justify-content: center;
+}
+
+fieldset>legend{
+    color:white;
+    margin-left: 6%;
+    padding: .5em;
+    border: black solid 1px;
+    background-color: #777;
+    border-radius: .4em;
+}
+
+label{
+    display:block;
+    margin:.5em;
+}
+
+label span{
+    display: block;
+    font-size:.8em;
+    color:#314047;
+    padding-top: .9em;
+    padding-bottom: .2em;
+}
+
+input.submitBtn{
+    -webkit-appearance: none;
+    display:block;
+    color:#fff;
+    border: black solid 1px;
+    border-radius: 7px;
+    width:50%;
+    margin:.5em 0;
+    font-size: 1em;
+    padding:.6em;
+    padding-bottom:1.2em;
+    background: #7d2a35;
+    box-shadow: 4px 4px 10px #666;
+    justify-content: center;
+    margin-right:auto;
+    margin-left:auto;
 }

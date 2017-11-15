@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en-us">
+
+<head w3-include-html="modules/head.html">
+    <title>Springville</title>
+</head>
+
+<body>
+
+    <header w3-include-html="modules/header.html">
+    </header>
+
+    <!-- site navigation use placeholder references -->
+    <nav w3-include-html="modules/nav.html">
+    </nav>
+
+    <main>
+        <h2>Springville</h2>
+        <figure class="firstimage">
+            <img src="images/franklin-original.jpeg" alt="Picture of the city of Franklin" sizes="50vw" srcset="images/franklin-small.jpg 250w, images/franklin-med.jpg 500w, images/franklin-large.jpg 800w">
+        </figure>
+        <div class="weathersummarycolor">
+            <h3 class="weathersummarytitle">Weather Summary</h3>
+            <section class="weathersummary">
+                <div class="highlow">
+                    <p>High: 60&deg;F</p>
+                    <p>Low: 40&deg;F</p>
+                </div>
+                <div class="current">
+                    <p>Rainy</p>
+                    <picture>
+                        <img class="rainimage" src="/cit230/Assignments/lesson-7/images/rainicon.png" alt="It's going to rain">
+                    </picture>
+                </div>
+
+                <div class="conditions">
+                    <p>Precipitation: </p>
+                    <p>Rain</p>
+                </div>
+
+                <div class="windspeed">
+                    <p>Wind Speed:</p>
+                    <p id="demo"></p>
+                </div>
+            </section>
+        </div>
+
+        <section class="forecast">
+            <h3>10 Day Forecast</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Day 1</th>
+                        <th>Day 2</th>
+                        <th>Day 3</th>
+                        <th>Day 4</th>
+                        <th>Day 5</th>
+                        <th>Day 6</th>
+                        <th>Day 7</th>
+                        <th>Day 8</th>
+                        <th>Day 9</th>
+                        <th>Day 10</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>89&deg;F</td>
+                        <td>87&deg;F</td>
+                        <td>78&deg;F</td>
+                        <td>75&deg;F</td>
+                        <td>72&deg;F</td>
+                        <td>72&deg;F</td>
+                        <td>79&deg;F</td>
+                        <td>83&deg;F</td>
+                        <td>85&deg;F</td>
+                        <td>89&deg;F</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <article>
+            <h3 class="articletitle">Franklin Breaks Record</h3>
+            <figure>
+                <img class="articleimage" src="images/franklinlightning.jpeg" alt="Lightning strikes in Franklin" sizes="50vw">
+            </figure>
+            <p class="town-article">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dolor dui, congue congue enim non, accumsan venenatis nulla. Sed molestie orci vel sem pharetra fringilla vitae in ex. Morbi sit amet consequat ipsum. Mauris et ultrices magna. Fusce laoreet ultrices lectus vitae molestie. Nam dapibus magna nisl, ut egestas orci mattis et. Curabitur ut turpis id nulla iaculis interdum. Ut dapibus quam enim, vel maximus mauris cursus eget. Nullam cursus, quam ac posuere commodo, ipsum eros porta massa, nec suscipit tortor augue eget est. Vestibulum eget ipsum lectus. Vestibulum eget ipsum sollicitudin, sagittis nisi a, vulputate risus. In ultrices, dui et ultrices euismod, dui ipsum elementum eros, sit amet eleifend libero augue vitae ex. Ut augue nunc, malesuada ut iaculis ac, efficitur ac dui. Vivamus ut sapien lobortis, aliquet ligula ut, cursus velit. Nullam luctus elit eget ipsum auctor, eget lobortis libero mollis. Mauris magna lectus, malesuada hendrerit egestas id, fringilla sit amet est. Morbi scelerisque risus ac ante bibendum, at accumsan lectus finibus. Morbi pharetra lacus non fermentum venenatis. Quisque congue, orci rutrum sollicitudin molestie, erat metus egestas augue, sed vehicula tellus ipsum id sapien. Curabitur neque augue, scelerisque eu pulvinar quis, aliquet sed velit.
+            </p>
+        </article>
+
+    </main>
+
+    <footer w3-include-html="modules/footer.html">
+
+    </footer>
+
+    <script src="scripts/w3.js"></script>
+    <script src="scripts/modularize.js"></script>
+    <script src="scripts/hamburger.js"></script>
+    <!--<script src="scripts/currentdate.js"></script>-->
+    <script src="scripts/windchill.js"></script>
+
+
+</body>
+
+</html>
