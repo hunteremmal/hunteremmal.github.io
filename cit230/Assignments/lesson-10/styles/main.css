@@ -146,14 +146,13 @@ footer>p {
 }
 
 .contactinfo {
-    display: flex;
-    justify-content: center;
-    justify-content: center;
+    display: block;
+    margin: 0 auto;
 }
 
 .footerbar {
-    display: flex;
-    justify-content: center;
+    display: block;
+    margin:auto;
 }
 
 a {
@@ -235,7 +234,7 @@ nav ul li.active a {
 }
 
 .caption {
-    font-size: .8em;
+    font-size: 1.4em;
 }
 
 

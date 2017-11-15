@@ -20,6 +20,7 @@
         text-align: center;
         padding: 14px 16px;
         text-decoration: none;
+        border: solid white 1px;
     }
     nav ul li.active a {
         background-color: #B0B0B0;
@@ -36,7 +37,7 @@
         border: solid black 1px;
         background: #314047;
         margin-left: 14%;
-        margin-right:14%;
+        margin-right: 14%;
     }
     .forecast td {
         padding: 2%;
