@@ -146,12 +146,13 @@ footer>p {
 }
 
 .contactinfo {
-    display: block;
+    display: flex;
+    justify-content: center;
     justify-content: center;
 }
 
 .footerbar {
-    display: block;
+    display: flex;
     justify-content: center;
 }
 
