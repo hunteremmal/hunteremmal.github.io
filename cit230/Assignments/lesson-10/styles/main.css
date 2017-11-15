@@ -102,8 +102,9 @@ table{
 
 td{
     background: blue;
-    padding:2%;
+    padding:4%;
     background: white;
+    justify-content: center;
 }
 
 th{

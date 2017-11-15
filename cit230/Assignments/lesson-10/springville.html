@@ -15,54 +15,63 @@
     </nav>
 
     <main>
-        <h2>Springville</h2>
+        <h2>Franklin</h2>
         <figure class="firstimage">
             <img src="images/franklin-original.jpeg" alt="Picture of the city of Franklin" sizes="50vw" srcset="images/franklin-small.jpg 250w, images/franklin-med.jpg 500w, images/franklin-large.jpg 800w">
         </figure>
-        <div class="weathersummarycolor">
-            <h3 class="weathersummarytitle">Weather Summary</h3>
-            <section class="weathersummary">
-                <div class="highlow">
-                    <p>High: 60&deg;F</p>
-                    <p>Low: 40&deg;F</p>
-                </div>
-                <div class="current">
-                    <p>Rainy</p>
-                    <picture>
-                        <img class="rainimage" src="/cit230/Assignments/lesson-7/images/rainicon.png" alt="It's going to rain">
-                    </picture>
-                </div>
-
-                <div class="conditions">
-                    <p>Precipitation: </p>
-                    <p>Rain</p>
-                </div>
-
-                <div class="windspeed">
-                    <p>Wind Speed:</p>
-                    <p id="demo"></p>
-                </div>
-            </section>
-        </div>
-
-        <section class="forecast">
-            <h3>10 Day Forecast</h3>
+        <section>
             <table>
                 <thead>
                     <tr>
-                        <th>Day 1</th>
-                        <th>Day 2</th>
-                        <th>Day 3</th>
-                        <th>Day 4</th>
-                        <th>Day 5</th>
-                        <th>Day 6</th>
-                        <th>Day 7</th>
-                        <th>Day 8</th>
-                        <th>Day 9</th>
-                        <th>Day 10</th>
+                        <th colspan="10">
+                            <h3>Weather Summary</h3>
+                        </th>
                     </tr>
                 </thead>
                 <tbody>
+                    <tr>
+                        <td colspan="5">High</td>
+                        <td colspan="5">60&deg;F</td>
+                    </tr>
+                    <tr>
+                        <td colspan="5">Low</td>
+                        <td colspan="5">40&deg;F</td>
+                    </tr>
+                    <tr>
+                        <td colspan="5">Rain</td>
+                        <td colspan="5"> <img class="rainimage" src="/cit230/Assignments/lesson-7/images/rainicon.png" alt="It's going to rain"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="5">Precipitation</td>
+                        <td colspan="5">Rain</td>
+                    </tr>
+                    <tr>
+                        <td colspan="5">Windspeed</td>
+                        <td colspan="5">
+                            <p id="demo"></p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="forecast">
+                <tr>
+                    <th colspan="10">
+                        <h3>10 Day Forecast</h3>
+                    </th>
+                </tr>
+                <tbody>
+                    <tr>
+                        <td>Day 1</td>
+                        <td>Day 2</td>
+                        <td>Day 3</td>
+                        <td>Day 4</td>
+                        <td>Day 5</td>
+                        <td>Day 6</td>
+                        <td>Day 7</td>
+                        <td>Day 8</td>
+                        <td>Day 9</td>
+                        <td>Day 10</td>
+                    </tr>
                     <tr>
                         <td>89&deg;F</td>
                         <td>87&deg;F</td>
@@ -77,6 +86,7 @@
                     </tr>
                 </tbody>
             </table>
+
         </section>
 
         <article>

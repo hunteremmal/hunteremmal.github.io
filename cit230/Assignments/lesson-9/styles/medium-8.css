@@ -29,7 +29,7 @@
         background-color: #B0B0B0;
     }
     .forecast {
-        display: flex;
+        display: block;
         flex-direction: column;
         justify-content: center;
     }

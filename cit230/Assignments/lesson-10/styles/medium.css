@@ -29,10 +29,18 @@
         background-color: #B0B0B0;
     }
     .forecast {
-        display: block;
-        margin: 3% auto;
+        display: inline-block;
+        max-width: 80%;
+        margin: 0 auto;
+        justify-content: center;
         border: solid black 1px;
         background: #314047;
+        margin-left: 14%;
+        margin-right:14%;
+    }
+    .forecast td {
+        padding: 2%;
+        justify-content: center;
     }
     .galleryimages {
         max-height: 300px;
