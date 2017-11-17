@@ -45,8 +45,8 @@ h3,
 h4,
 h5,
 h6 {
-    display: flex;
-    justify-content: center;
+    display: block;
+    justify-content: left;
     font-family: "Righteous";
     color: #314047;
 }
@@ -103,9 +103,10 @@ h6 {
 }
 
 table{
-    margin: 3% auto;
+    margin: 2% 10%;
     border: solid black 1px;
     background: #314047;
+    justify-content: left;
 }
 
 td{
@@ -125,19 +126,16 @@ th h3{
 
 
 article {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 0 20%;
+    display: block;
+    justify-content: left;
+    margin: 0 10%;
     margin-bottom: 2%;
 }
 
 .articleimage {
     display: block;
     max-width: 800px;
-    margin: auto;
-    width:80%;
-    justify-content: center;
+    margin: 0 10%;
     min-width: 200px;
 }
 
@@ -157,7 +155,7 @@ footer {
 footer>p {
     font-size: .8em;
     display:flex;
-    justify-content: center;
+    justify-content: left;
 }
 
 .contactinfo {

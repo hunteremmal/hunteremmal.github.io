@@ -1,7 +1,9 @@
-w3.includeHTML();
+w3.includeHTML(function({
+    currentdate();
+}));
 
 //day of week
-var d = new Date();
+/*var d = new Date();
 var weekday = new Array(7);
 weekday[0] = "Sunday";
 weekday[1] = "Monday";
@@ -57,4 +59,5 @@ if (pageHREF !=="") {
 		} // end if
 	} // end of the search for a match
 } // end of if !==
+*/
 */
