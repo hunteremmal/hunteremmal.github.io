@@ -9,15 +9,18 @@ header {
     display: flex;
     background-color: #314047;
     justify-content: center;
-    padding: 2%;
-    padding-bottom: 5%;
+    padding: 1%;
+    margin:0 10%;
+    height:auto;
 }
 
 .logo {
-    display: flex;
-    width: 10%;
-    height: 10%;
+    display: flex nowrap;
+    width: 7%;
+    height: 7%;
     margin: 5%;
+    margin-left: -10%;
+    min-width: 50px;
 }
 
 header h1 {
@@ -49,8 +52,12 @@ h6 {
 }
 
 .firstimage {
-    display: flex;
+    display:block;
     justify-content: center;
+    margin: 0 10%;
+    height:80%;
+    max-width: 800px;
+    
 }
 
 .weathersummarycolor {
@@ -59,7 +66,7 @@ h6 {
 
 .weathersummary {
     margin: 4% auto;
-    display: flex;
+    display: block;
     flex-direction: row;
     justify-content: space-around;
     align-items: flex-start;
@@ -80,9 +87,10 @@ h6 {
 */
 
 .rainimage {
-    display: flex;
-    width: 70%;
-    align-items: center;
+    display: block;
+    width: 80%;
+    justify-content: center;
+    margin: 0 auto;
 }
 
 
@@ -121,12 +129,16 @@ article {
     flex-direction: column;
     justify-content: center;
     margin: 0 20%;
+    margin-bottom: 2%;
 }
 
 .articleimage {
     display: block;
     max-width: 800px;
-    margin: 0 auto;
+    margin: auto;
+    width:80%;
+    justify-content: center;
+    min-width: 200px;
 }
 
 .town-article {
@@ -137,17 +149,20 @@ footer {
     display:block;
     background-color: #314047;
     color: #ffffff;
-    padding: 2%;
-    margin: 0 auto;
+    padding: 3%;
+    margin: 0 10%;
+    
 }
 
 footer>p {
     font-size: .8em;
+    display:flex;
+    justify-content: center;
 }
 
 .contactinfo {
     display: block;
-    margin: 0 auto;
+
 }
 
 .footerbar {
@@ -247,7 +262,7 @@ nav ul li.active a {
     grid-auto-rows: 100px;
     grid-column-gap: 6px;
     grid-row-gap: 6px;
-    margin: auto;
+    margin:auto;
     padding: 2%;
 }
 
