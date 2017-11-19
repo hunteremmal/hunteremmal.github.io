@@ -10,8 +10,8 @@ header {
     background-color: #314047;
     justify-content: center;
     padding: 1%;
-    margin:0 10%;
-    height:auto;
+    margin: 0 10%;
+    height: auto;
 }
 
 .logo {
@@ -19,7 +19,7 @@ header {
     width: 7%;
     height: 7%;
     margin: 5%;
-    margin-left: -10%;
+    margin-left: 10%;
     min-width: 50px;
 }
 
@@ -40,7 +40,14 @@ header .subheading {
     width: auto;
 }
 
-h2,
+h2 {
+    display: block;
+    justify-content: left;
+    font-family: "Righteous";
+    color: #314047;
+    margin-left: 10%;
+}
+
 h3,
 h4,
 h5,
@@ -52,12 +59,11 @@ h6 {
 }
 
 .firstimage {
-    display:block;
+    display: block;
     justify-content: center;
     margin: 0 10%;
-    height:80%;
+    height: 80%;
     max-width: 800px;
-    
 }
 
 .weathersummarycolor {
@@ -102,28 +108,27 @@ h6 {
     display: none;
 }
 
-table{
+table {
     margin: 2% 10%;
     border: solid black 1px;
     background: #314047;
     justify-content: left;
 }
 
-td{
+td {
     background: blue;
-    padding:4%;
+    padding: 4%;
     background: white;
     justify-content: center;
 }
 
-th{
-    color:white;
-}
-
-th h3{
+th {
     color: white;
 }
 
+th h3 {
+    color: white;
+}
 
 article {
     display: block;
@@ -135,37 +140,35 @@ article {
 .articleimage {
     display: block;
     max-width: 800px;
-    margin: 0 10%;
     min-width: 200px;
+    margin-left: -10%;
 }
 
 .town-article {
-    display: flex;
+    display: block;
 }
 
 footer {
-    display:block;
+    display: block;
     background-color: #314047;
     color: #ffffff;
     padding: 3%;
     margin: 0 10%;
-    
 }
 
 footer>p {
     font-size: .8em;
-    display:flex;
+    display: flex;
     justify-content: left;
 }
 
 .contactinfo {
     display: block;
-
 }
 
 .footerbar {
     display: block;
-    margin:auto;
+    margin: auto;
 }
 
 a {
@@ -260,18 +263,20 @@ nav ul li.active a {
     grid-auto-rows: 100px;
     grid-column-gap: 6px;
     grid-row-gap: 6px;
-    margin:auto;
+    margin: 2px auto;
     padding: 2%;
+    max-width: 80%;
 }
 
 .galleryimages {
-    max-height: 200px;
+    max-height: 300px;
 }
+
 
 /*form stuff*/
 
-fieldset{
-    background-color:#B0B0B0;
+fieldset {
+    background-color: #B0B0B0;
     border-radius: .8em;
     margin: 1.5em auto;
     border: black solid 1px;
@@ -279,8 +284,8 @@ fieldset{
     justify-content: center;
 }
 
-fieldset>legend{
-    color:white;
+fieldset>legend {
+    color: white;
     margin-left: 6%;
     padding: .5em;
     border: black solid 1px;
@@ -288,33 +293,63 @@ fieldset>legend{
     border-radius: .4em;
 }
 
-label{
-    display:block;
-    margin:.5em;
+label {
+    display: block;
+    margin: .5em;
 }
 
-label span{
+label span {
     display: block;
-    font-size:.8em;
-    color:#314047;
+    font-size: .8em;
+    color: #314047;
     padding-top: .9em;
     padding-bottom: .2em;
 }
 
-input.submitBtn{
+input.submitBtn {
     -webkit-appearance: none;
-    display:block;
-    color:#fff;
+    display: block;
+    color: #fff;
     border: black solid 1px;
     border-radius: 7px;
-    width:50%;
-    margin:.5em 0;
+    width: 50%;
+    margin: .5em 0;
     font-size: 1em;
-    padding:.6em;
-    padding-bottom:1.2em;
+    padding: .6em;
+    padding-bottom: 1.2em;
     background: #7d2a35;
     box-shadow: 4px 4px 10px #666;
     justify-content: center;
-    margin-right:auto;
-    margin-left:auto;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.homepics {
+    display: flex;
+}
+
+.homecity {
+    display: grid;
+    grid-template-columns:1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-auto-rows: ;
+    grid-column-gap:  ;
+    grid-row-gap: ;
+    border: solid black 1px;
+    margin: 2px auto;
+    padding: 2%;
+    max-width: 80%;
+}
+
+.home {
+    display: flex;
+    flex-direction: row;
+}
+
+.mainhome{
+    margin: 2% 10%;
+}
+
+.homestory{
+    padding:2% 0;
 }
