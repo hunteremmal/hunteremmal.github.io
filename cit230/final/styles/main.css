@@ -1,52 +1,144 @@
-body{
+/*This is the CSS for EVERYTHING*/
+
+body {
     font-family: 'Titillium Web', sans-serif;
     font-size: 15px;
-    background:#EAF7DE;
+    background: #EAF7DE;
 }
 
-h1{
-    font-family: 'Anton', sans-serif;
-    color:#2D3922;
-    font-size: 
-}
-
-h2{
-    font-family: 'Anton', sans-serif;
-    color:#2D3922;    
-}
-
-nav{
+nav {
     background-color: #2D3922;
-    color:#EAF7DE;
-    margin:none;
-    padding:none;
+    color: #EAF7DE;
 }
 
-footer{
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: #EAF7DE;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #1E2617;
+}
+
+h1 {
+    font-family: 'Anton', sans-serif;
+    color: #2D3922;
+    font-size: 3rem;
+}
+
+h2 {
+    font-family: 'Anton', sans-serif;
+    color: #2D3922;
+}
+
+footer {
     background-color: #2D3922;
-    color:#EAF7DE;
+    color: #EAF7DE;
+    margin-bottom: none;
+    padding-bottom: 14px;
+    padding-top: 14px;
 }
 
-.button{
-    
+a {
+    color: #EAF7DE;
+    text-decoration: none;
 }
 
-.medhomepic{
-    
+nav ul li.active a {
+    color: #EAF7DE;
+    text-decoration: none;
 }
 
-.homearticle1{
-    
+
+/* This is CSS for the HOME PAGE*/
+
+.spanhomeimage {
+    max-width: 100%;
+    margin: none;
+    padding: none;
 }
 
-.homearticle2{
-    
+.container {
+    position: relative;
 }
 
-.homegallerydiv{
-    
+.header {
+    position: absolute;
+    top: 30%;
+    left: 46%;
+    transform: translate(-30%, -50%);
 }
 
-.homegallery{
-    
+.subheading {
+    color: #2D3922;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-45%, -50%);
+}
+
+.button {
+    position: absolute;
+    border: solid #EAF7DE 2px;
+    background: #2D3922;
+    color: #EAF7DE;
+    bottom: 10%;
+    right: 5%;
+    padding: 1%;
+}
+
+.topgrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 6px;
+    grid-auto-rows: (100px, auto)
+}
+
+.medhomepic {
+    grid-column: 1/3;
+    grid-row: 1/4;
+}
+
+.homearticle1 {
+    border: solid #2D3922 1px;
+    grid-row: 1/2;
+    grid-column: 3;
+}
+
+.homearticle2 {
+    border: solid #2D3922 1px;
+    grid-row: 2/2;
+    grid-column: 3;
+}
+
+.homegallerydiv {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-auto-rows: 3px;
+    grid-auto-columns: 3px;
+}
+
+.homegallery {}
+
+
+/*CSS for EVENTS PAGE*/
+
+.registerbutton {
+    color: #EAF7DE;
+    background-color: #2D3922;
 }
