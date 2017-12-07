@@ -8,14 +8,38 @@
 <body>
     <nav w3-include-html="modules/nav.html">
     </nav>
-    
+
     <header w3-include-html="modules/header.html">
     </header>
+    
+<div class="registrationpage">
+    
+    <fieldset>
+        <legend>Personal Information</legend>
+        <p><label><span>Full Name:</span><input name="fullname" type="text" value="" placeholder="Full Name" pattern="[a-zA-Z]{5}"></label> </p>
 
+        <p><label><span>Email:</span><input name="email" type="email" value="" placeholder="zen@gmail.com"></label></p>
 
+        <p><label><span>Phone Number:</span><input name="phone" type="tel" value="" required></label></p>
 
+        <p><label><span>Date of Birth:</span><input name="stormDate" type="date"></label></p>
 
+        <p><label>
+        <span>Home State/Country:</span>
+        <input type="text" name="region" list="cities" placeholder="Select Region">
+        <datalist id="cities">
+            <option value="Franklin"></option>
+            <option value="Greenville"></option>
+            <option value="Springfiled"></option>
+        </datalist>
+        </label></p>
 
+        <p><label><span>Special Accommodations or Comments:</span><br><textarea name="comments" rows="10" cols="50" placeholder="Write comments here."></textarea></label></p>
+    </fieldset>
+
+    <input type="submit" value="Submit" class="submitBtn">
+    
+    </div>
 
     <footer w3-include-html="modules/footer.html">
     </footer>
