@@ -51,6 +51,7 @@ footer {
     margin-bottom: none;
     padding-bottom: 14px;
     padding-top: 14px;
+    padding-left: 14px;
 }
 
 a {
@@ -72,8 +73,8 @@ nav ul li.active a {
     padding: none;
 }
 
-.homepage{
-    margin:2% 10%;
+.homepage {
+    margin: 2% 10%;
 }
 
 .container {
@@ -110,7 +111,7 @@ nav ul li.active a {
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 6px;
     grid-auto-rows: (100px, auto);
-    margin:2% 0;
+    margin: 2% 0;
 }
 
 .medhomepic {
@@ -121,7 +122,7 @@ nav ul li.active a {
 .homearticle1 {
     border: solid #2D3922 1px;
     grid-row: 1/2;
-    grid-column:3;
+    grid-column: 3;
 }
 
 .homearticle2 {
@@ -141,20 +142,17 @@ nav ul li.active a {
 .homegallery {}
 
 
-
 /*CSS for EVENTS PAGE*/
 
-.registerbutton {
-    
-}
+.registerbutton {}
 
 .regularlist li {
     float: none;
     display: block;
 }
 
-.eventpage{
-    margin:2% 10%;
+.eventpage {
+    margin: 2% 10%;
 }
 
 
@@ -168,59 +166,137 @@ nav ul li.active a {
     margin: 2% 10%;
 }
 
-.ba1{
+.ba1 {
     grid-column: 1/2;
-    
 }
 
-.ba2{
+.ba2 {
     grid-column: 2/2;
 }
+
 
 /*CSS for CONTACT PAGE*/
 
-.contactbody{
+.contactbody {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap:10px;
+    grid-gap: 10px;
     grid-auto-rows: (100px, auto);
-    margin:2% 10%;
+    margin: 2% 10%;
 }
 
-.column1{
+.column1 {
     grid-column: 1/2;
 }
 
-.column2{
+.column2 {
     grid-column: 2/2;
 }
 
+
 /*CSS for REGISTRATION PAGE*/
 
-.registrationpage{
-    margin:2% 10%;
+.registrationpage {
+    margin: 2% 10%;
 }
+
 
 /*CSS for SALES PAGE*/
 
-.salesgrid{
-    display:grid;
+.salesgrid {
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap:10px;
+    grid-gap: 10px;
     grid-auto-rows: (100px, auto);
-    margin:2% 10%;
+    margin: 2% 10%;
 }
 
-.homegallery{
-    grid-column: 
+.homegallery {
+    grid-column:
 }
-
-
 
 
 /*CSS for SERVICE PAGE*/
 
-.servicepage{
-    margin:2% 10%;
+.servicepage {
+    margin: 2% 10%;
 }
 
+
+/*HAMBURGER DISPLAY*/
+
+.hamburger {
+    display: block;
+    position: absolute;
+    top: 2.0rem;
+    right: 1.25rem;
+}
+
+.navigation {
+    list-style: none;
+    padding-left: 0;
+}
+
+.navigation li {
+    display: none;
+}
+
+
+/* When the responsive class is added to the unordered list on hamburger button click 
+placed in a media query in order to accomodate the toggle when in wider view*/
+
+@media only screen and (max-width: 37.5em) {
+    .navigation.responsive {
+        position: relative;
+    }
+    .navigation.responsive li {
+        background-color: #2D3922;
+        display: block;
+        width: 100%;
+        margin: 2px 0;
+        border: 1px solid #EAF7DE;
+    }
+    .navigation.responsive li a {
+        padding: 1rem;
+        text-align: center;
+        display: block;
+        text-decoration: none;
+    }
+    .navigation.responsive li a:hover {
+        background-color: #1E2617;
+    }
+}
+
+
+/* The following can be used in lieu of a button with a HTML entity which may not be dispalyed correctly in all browsers - or a SVG option is good - button size issue
+.hamburger { 
+    content: "";
+    position: absolute;
+    right: 1.5rem; top: 1.8rem;
+    display: block;
+    width: 1.25rem; height: 0;
+    -webkit-box-shadow: 1px 10px 1px 1px #eee,1px 16px 1px 1px #eee,1px 22px 1px 1px #eee;
+    box-shadow: 0 10px 0 1px #eee,0 16px 0 1px #eee,0 22px 0 1px #eee;
+}*/
+
+@media only screen and (min-width: 37.5em) {
+
+    .hamburger {
+        display: none;
+    }
+    .navigation {
+        overflow: hidden;
+        text-align: center;
+    }
+    .navigation li {
+        display: inline-block;
+    }
+    .navigation a {
+        display: block;
+        text-align: center;
+        text-decoration: none;
+    }
+    .navigation a:hover {
+
+    }
+}
