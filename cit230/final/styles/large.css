@@ -1,0 +1,24 @@
+@media only screen and (min-width: 64em) {
+    .header {
+        position: absolute;
+        top: 30%;
+        left: 45%;
+        transform: translate(-30%, -45%);
+        font-size: 4rem;
+    }
+    .subheading {
+        color: #2D3922;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 1rem;
+    }
+    .logo {
+        position: absolute;
+        top: 30%;
+        left: 15%;
+        transform: translate(-30%, -10%);
+        width:18%;
+    }
+}

@@ -43,6 +43,8 @@ h1 {
 h2 {
     font-family: 'Anton', sans-serif;
     color: #2D3922;
+    font-size: 2rem;
+    text-decoration: underline;
 }
 
 footer {
@@ -81,19 +83,31 @@ nav ul li.active a {
     position: relative;
 }
 
+.logo {
+    position: absolute;
+    top: 45%;
+    left: 25%;
+    transform: translate(-45%, -25%);
+    width: 40%;
+}
+
 .header {
     position: absolute;
-    top: 30%;
-    left: 46%;
-    transform: translate(-30%, -50%);
+    top: 20%;
+    left: 40%;
+    transform: translate(-20%, -40%);
+    font-size: 1.5rem;
+    color: #EAF7DE;
 }
 
 .subheading {
+    display: none;
     color: #2D3922;
     position: absolute;
-    top: 45%;
+    top: 85%;
     left: 50%;
-    transform: translate(-45%, -50%);
+    transform: translate(-85%, -50%);
+    font-size: 1rem;
 }
 
 .button {
@@ -108,13 +122,14 @@ nav ul li.active a {
 
 .topgrid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     grid-gap: 6px;
     grid-auto-rows: (100px, auto);
     margin: 2% 0;
 }
 
 .medhomepic {
+    display: none;
     grid-column: 1/3;
     grid-row: 1/4;
 }
@@ -122,87 +137,83 @@ nav ul li.active a {
 .homearticle1 {
     border: solid #2D3922 1px;
     grid-row: 1/2;
-    grid-column: 3;
+    grid-column: 1;
+    padding: 8px;
 }
 
 .homearticle2 {
     border: solid #2D3922 1px;
     grid-row: 2/2;
-    grid-column: 3;
+    grid-column: 1;
+    padding: 8px;
 }
 
 .homegallerydiv {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    grid-auto-rows: 3px;
-    grid-auto-columns: 3px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 6px;
+    grid-auto-rows: (100px, auto);
 }
 
-.homegallery {}
+.homegallery {
+    width:200px;
+}
 
+.articlelinks{
+    color:#2D3922;
+    text-decoration: underline;
+}
+
+}
 
 /*CSS for EVENTS PAGE*/
-
 .registerbutton {}
-
 .regularlist li {
     float: none;
     display: block;
 }
-
 .eventpage {
     margin: 2% 10%;
 }
 
-
 /*CSS for ADVENTURE TOUR*/
-
 .ba {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     grid-gap: 6px;
-    grid-auto-rows: (100px, auto);
+    grid-auto-columns: (100px, auto);
     margin: 2% 10%;
 }
-
 .ba1 {
-    grid-column: 1/2;
+    grid-row: 1/2;
 }
-
 .ba2 {
-    grid-column: 2/2;
+    grid-row: 2/2;
 }
-
 
 /*CSS for CONTACT PAGE*/
-
 .contactbody {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     grid-gap: 10px;
-    grid-auto-rows: (100px, auto);
+    grid-auto-columns: (100px, auto);
     margin: 2% 10%;
 }
-
 .column1 {
     grid-column: 1/2;
+    width: 80%;
 }
-
 .column2 {
-    grid-column: 2/2;
+    grid-column: ;
+    width: 60%;
 }
-
 
 /*CSS for REGISTRATION PAGE*/
-
 .registrationpage {
     margin: 2% 10%;
 }
 
-
 /*CSS for SALES PAGE*/
-
 .salesgrid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -210,45 +221,37 @@ nav ul li.active a {
     grid-auto-rows: (100px, auto);
     margin: 2% 10%;
 }
-
 .homegallery {
     grid-column:
 }
 
-
 /*CSS for SERVICE PAGE*/
-
 .servicepage {
     margin: 2% 10%;
 }
 
-
 /*HAMBURGER DISPLAY*/
-
 .hamburger {
     display: block;
     position: absolute;
     top: 2.0rem;
     right: 1.25rem;
 }
-
 .navigation {
     list-style: none;
     padding-left: 0;
 }
-
 .navigation li {
     display: none;
 }
 
-
 /* When the responsive class is added to the unordered list on hamburger button click 
 placed in a media query in order to accomodate the toggle when in wider view*/
-
 @media only screen and (max-width: 37.5em) {
     .navigation.responsive {
         position: relative;
     }
+    
     .navigation.responsive li {
         background-color: #2D3922;
         display: block;
@@ -256,17 +259,18 @@ placed in a media query in order to accomodate the toggle when in wider view*/
         margin: 2px 0;
         border: 1px solid #EAF7DE;
     }
+    
     .navigation.responsive li a {
         padding: 1rem;
         text-align: center;
         display: block;
         text-decoration: none;
     }
+    
     .navigation.responsive li a:hover {
         background-color: #1E2617;
     }
 }
-
 
 /* The following can be used in lieu of a button with a HTML entity which may not be dispalyed correctly in all browsers - or a SVG option is good - button size issue
 .hamburger { 
@@ -278,25 +282,59 @@ placed in a media query in order to accomodate the toggle when in wider view*/
     -webkit-box-shadow: 1px 10px 1px 1px #eee,1px 16px 1px 1px #eee,1px 22px 1px 1px #eee;
     box-shadow: 0 10px 0 1px #eee,0 16px 0 1px #eee,0 22px 0 1px #eee;
 }*/
-
 @media only screen and (min-width: 37.5em) {
-
     .hamburger {
         display: none;
     }
+    
     .navigation {
         overflow: hidden;
         text-align: center;
     }
+    
     .navigation li {
         display: inline-block;
     }
+    
     .navigation a {
         display: block;
         text-align: center;
         text-decoration: none;
     }
-    .navigation a:hover {
+    
+    .navigation a:hover {}
+}
 
-    }
+/*SUBMIT BUTTON*/
+input.submitBtn {
+    -webkit-appearance: none;
+    display: block;
+    color: #EAF7DE;
+    border: #1E2617 solid 1px;
+    border-radius: 7px;
+    width: 50%;
+    margin: .5em 0;
+    font-size: 1em;
+    padding: .6em;
+    padding-bottom: 1.2em;
+    background: #2D3922;
+    box-shadow: 4px 4px 10px #666;
+    justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+.registerbutton {
+    -webkit-appearance: none;
+    display: block;
+    color: #EAF7DE;
+    border: #1E2617 solid 1px;
+    border-radius: 7px;
+    width: 50%;
+    margin: .5em 0;
+    font-size: 1em;
+    padding: .6em;
+    padding-bottom: 1.2em;
+    background: #2D3922;
+    box-shadow: 4px 4px 10px #666;
+    justify-content: center;
 }
