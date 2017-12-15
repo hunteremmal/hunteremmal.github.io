@@ -150,7 +150,7 @@ nav ul li.active a {
 
 .homegallerydiv {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     grid-gap: 6px;
     grid-auto-rows: (100px, auto);
 }
@@ -227,7 +227,7 @@ nav ul li.active a {
 */
 
 .accordion{
-    
+    margin:2% 10%;
 }
 
 .salespic{
